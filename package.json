@@ -1,0 +1,62 @@
+{
+  "name": "midway-email",
+  "version": "1.0.0",
+  "description": "A Midway component wrapping nodemailer for convenient email sending",
+  "main": "dist/index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "build": "mwtsc --cleanOutDir",
+    "test": "cross-env NODE_ENV=unittest jest",
+    "cov": "jest --coverage",
+    "lint": "mwts check",
+    "lint:fix": "mwts fix",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "midway",
+    "midwayjs",
+    "email",
+    "nodemailer",
+    "mail",
+    "smtp",
+    "component"
+  ],
+  "author": "",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "index.d.ts",
+    "README.md",
+    "README.en.md"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@midwayjs/core": "^4.0.0"
+  },
+  "devDependencies": {
+    "@midwayjs/core": "^4.0.0",
+    "@midwayjs/logger": "^4.0.0",
+    "@midwayjs/mock": "^4.0.0",
+    "@midwayjs/skill-midway": "^4.1.1",
+    "@types/jest": "^29.2.0",
+    "@types/node": "20",
+    "@types/nodemailer": "^8.0.0",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "mwts": "^2.0.4",
+    "mwtsc": "^1.4.0",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "nodemailer": "^8.0.10"
+  }
+}
